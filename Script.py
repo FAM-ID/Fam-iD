@@ -39,7 +39,7 @@ for i in range(int(jumlah)):
     darko=requests.put('https://webapi.depop.com/api/v1/auth/verify/phone',headers=mr_f,json=dark)
     ets=json.loads(darko.text)
     if ets['is_verified']==False:
-         print('/nSpam Berhasil')
+         print('Spam Berhasil')
          time.sleep(2)
     else:
          print('Spam Gagal')
